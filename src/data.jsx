@@ -6,27 +6,27 @@ const  dataFile = [
     },
     {
         id: '2',
-        name: 'Ali',
+        name: 'Khan',
         edu: 'MA',
     },
     {
         id: '3',
-        name: 'Ali',
+        name: 'Khalid',
         edu: 'MA',
     },
     {
         id: '4',
-        name: 'Ali',
+        name: 'Zubair',
         edu: 'MA',
     },
     {
         id: '5',
-        name: 'Ali',
+        name: 'Khailq',
         edu: 'MA',
     },
     {
         id: '6',
-        name: 'Ali',
+        name: 'Arib',
         edu: 'MA',
     },
     {
@@ -36,7 +36,7 @@ const  dataFile = [
     },
     {
         id: '8',
-        name: 'Ali',
+        name: 'Usman',
         edu: 'MA',
     },
     {
