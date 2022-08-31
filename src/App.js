@@ -7,6 +7,7 @@ import Class from './Pages/Class';
 import ShowHide from './Pages/ShowHide';
 import Form from './Pages/Form';
 import Profile from './Pages/Profile';
+import Edit from './Edit';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/showhide" element={<ShowHide />} />
           <Route path="/form" element={<Form />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/edit/:id" element={<Edit />} />
         </Routes>
     </div>
   )
