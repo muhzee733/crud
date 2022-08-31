@@ -3,10 +3,12 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
+
 export const Home = () => {
   const [user, setUsers] = useState([]);
   const [input, setInput] = useState({ name: "", email: "", adderss: "" });
   const [render, setRender] = useState(false);
+  const [querry, setQuerry] = useState('');
 
   useEffect(() => {
     try {
@@ -19,6 +21,11 @@ export const Home = () => {
       console.log(error);
     }
   }, [render]);
+  // Search 
+  const inputEvent = (event) =>{
+    const data = event.target.value;
+    setQuerry(data);
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -28,14 +35,12 @@ export const Home = () => {
 
   const handleDelete = async (id) => {
     await axios.delete(`http://localhost:8000/posts/${id}`);
-    const newUsers = user.filter((user) =>{
+    const newUsers = user.filter((user) => {
       return user.id !== id;
-    })
+    });
     setUsers(newUsers);
-  }
-  const handleEdit = async () =>{
-
-  }
+  };
+  const handleEdit = () => {};
 
   return (
     <>
@@ -87,6 +92,7 @@ export const Home = () => {
 
       <table className="table container mt-5">
         <>
+        <input type="text"  placeholder="Filter" className="filter" onChange={inputEvent} />
           <tr>
             <td>ID</td>
             <td>Name</td>
@@ -95,16 +101,17 @@ export const Home = () => {
             <td>Action</td>
           </tr>
           {user &&
-            user.map((val) => (
+            user.filter(user => user.name.toLowerCase().includes(querry)).map((val) => (
               <tr key={val.id}>
                 <td>{val.id}</td>
                 <td>{val.name}</td>
                 <td>{val.email}</td>
                 <td>{val.adderss}</td>
-                <td><button onClick={() => handleDelete(val.id)}>Delete</button>
-                <Link to={`/edit/${val.id}`}>
-                  <button onClick={() => handleEdit(user.id)}>Edit</button>
-                </Link>
+                <td>
+                  <button className="btn btn-info" onClick={() => handleDelete(val.id)}>Delete</button>
+                  <Link to={`/edit/${val.id}`}>
+                    <button className="btn btn-danger" onClick={() => handleEdit(val.id)}>Edit</button>
+                  </Link>
                 </td>
               </tr>
             ))}
