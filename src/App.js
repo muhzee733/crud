@@ -8,6 +8,7 @@ import ShowHide from './Pages/ShowHide';
 import Form from './Pages/Form';
 import Profile from './Pages/Profile';
 import Edit from './Edit';
+import LifeCycle from './LifeCycle';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/form" element={<Form />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/edit/:id" element={<Edit />} />
+          <Route path="/life" element={<LifeCycle />} />
         </Routes>
     </div>
   )
