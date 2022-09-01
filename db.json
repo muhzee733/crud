@@ -29,34 +29,6 @@
       "email": "baasitss@gmail.com",
       "adderss": "lahoreaass",
       "id": 8
-    },
-    {
-      "name": "Basit ALi",
-      "email": "amazondokhan786@gmail.com",
-      "adderss": "House Mujahid Colony Mughalpura Lahore",
-      "id": 9
-    },
-    {
-      "name": "Basit ALi",
-      "email": "amazondokhan786@gmail.com",
-      "adderss": "House Mujahid Colony Mughalpura Lahore",
-      "id": 10
-    },
-    {
-      "name": "Basit ALi2",
-      "email": "amazondokhan786@gmail.com",
-      "adderss": "House Mujahid Colony Mughalpura Lahore",
-      "id": 11
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
