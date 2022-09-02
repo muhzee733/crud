@@ -11,24 +11,60 @@
       "name": "John",
       "email": "john@mail.com",
       "adderss": "North street"
+
     },
     {
       "id": 3,
       "name": "Robert",
       "email": "robert@mail.com",
       "adderss": "East street"
+
     },
     {
       "id": 4,
       "name": "Mani",
       "email": "mani@mail.com",
       "adderss": "West street"
+
     },
     {
       "name": "Basit",
       "email": "baasitss@gmail.com",
       "adderss": "lahoreaass",
       "id": 8
+    }
+  ],
+
+  "product": [
+    {
+      "id": 1,
+      "name": "Pizza",
+      "price": "20",
+      "img" : "/img/img1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Pizza",
+      "price": "30",
+      "img" : "https://preview.colorlib.com/theme/ogani/img/featured/feature-6.jpg.webp"
+    },
+    {
+      "id": 3,
+      "name": "Pizza",
+      "price": "40",
+      "img" : "https://preview.colorlib.com/theme/ogani/img/featured/feature-6.jpg.webp"
+    },
+    {
+      "id": 4,
+      "name": "Burger",
+      "price": "50",
+      "img" : "https://preview.colorlib.com/theme/ogani/img/featured/feature-6.jpg.webp"
+    },
+    {
+      "id": 5,
+      "name": "Pizza ",
+      "price": "60",
+      "img" : "https://preview.colorlib.com/theme/ogani/img/featured/feature-6.jpg.webp"
     }
   ]
 }

@@ -7,3 +7,20 @@ table, th, td {
     top: 0;
     right: 22%;
 }
+.box{
+  width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+.price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.products{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;  
+}

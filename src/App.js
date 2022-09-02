@@ -9,12 +9,16 @@ import Form from './Pages/Form';
 import Profile from './Pages/Profile';
 import Edit from './Edit';
 import LifeCycle from './LifeCycle';
+import Shop from './Pages/Shop';
+import SingleProduct from './Pages/SingleProduct';
 
 const App = () => {
   return (
     <div>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/shop" exact element={<Shop />} />
+          <Route path="/shop/:id" element={<SingleProduct />} />
           <Route path="/text" element={<Text />} />
           <Route path="/crud" element={<Crud />} />
           <Route path="/class" element={<Class />} />
