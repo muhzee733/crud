@@ -11,10 +11,14 @@ import Edit from './Edit';
 import LifeCycle from './LifeCycle';
 import Shop from './Pages/Shop';
 import SingleProduct from './Pages/SingleProduct';
+import Cart from './Pages/Cart';
+import Navbar from './Navbar';
+
 
 const App = () => {
   return (
     <div>
+      <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" exact element={<Shop />} />
@@ -27,6 +31,7 @@ const App = () => {
           <Route path="/profile" element={<Profile />} />
           <Route path="/edit/:id" element={<Edit />} />
           <Route path="/life" element={<LifeCycle />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
     </div>
   )

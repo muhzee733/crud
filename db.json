@@ -46,25 +46,19 @@
       "id": 2,
       "name": "Pizza",
       "price": "30",
-      "img" : "https://preview.colorlib.com/theme/ogani/img/featured/feature-6.jpg.webp"
+      "img" : "/img/img1.jpg"
     },
     {
       "id": 3,
       "name": "Pizza",
       "price": "40",
-      "img" : "https://preview.colorlib.com/theme/ogani/img/featured/feature-6.jpg.webp"
+      "img" : "/img/img1.jpg"
     },
     {
       "id": 4,
       "name": "Burger",
       "price": "50",
-      "img" : "https://preview.colorlib.com/theme/ogani/img/featured/feature-6.jpg.webp"
-    },
-    {
-      "id": 5,
-      "name": "Pizza ",
-      "price": "60",
-      "img" : "https://preview.colorlib.com/theme/ogani/img/featured/feature-6.jpg.webp"
+      "img" : "/img/img1.jpg"
     }
   ]
 }
