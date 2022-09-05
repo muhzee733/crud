@@ -17,16 +17,22 @@ import { CartContext } from './Pages/CartContext';
 
 
 const App = () => {
-  const [cart, seCart] = useState({});
+  const [cart, setCart] = useState({});
   useEffect(() => {
     const cart = window.localStorage.getItem('cart');
 
   }, [])
+
+  useEffect(() => {
+    window.localStorage.setItem('cart', JSON.stringify(cart));
+
+  }, [cart])
+  
   
   return (
     <div>
       <Navbar />
-      <CartContext.Provider value={{cart}}>
+      <CartContext.Provider value={{Cart, setCart}}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" exact element={<Shop />} />
