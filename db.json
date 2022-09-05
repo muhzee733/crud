@@ -11,21 +11,18 @@
       "name": "John",
       "email": "john@mail.com",
       "adderss": "North street"
-
     },
     {
       "id": 3,
       "name": "Robert",
       "email": "robert@mail.com",
       "adderss": "East street"
-
     },
     {
       "id": 4,
       "name": "Mani",
       "email": "mani@mail.com",
       "adderss": "West street"
-
     },
     {
       "name": "Basit",
@@ -34,31 +31,30 @@
       "id": 8
     }
   ],
-
   "product": [
     {
       "id": 1,
       "name": "Pizza",
       "price": "20",
-      "img" : "/img/img1.jpg"
+      "img": "/img/img1.jpg"
     },
     {
       "id": 2,
       "name": "Pizza",
       "price": "30",
-      "img" : "/img/img1.jpg"
+      "img": "/img/img1.jpg"
     },
     {
       "id": 3,
       "name": "Pizza",
       "price": "40",
-      "img" : "/img/img1.jpg"
+      "img": "/img/img1.jpg"
     },
     {
       "id": 4,
       "name": "Burger",
       "price": "50",
-      "img" : "/img/img1.jpg"
+      "img": "/img/img1.jpg"
     }
   ]
 }

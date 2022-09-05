@@ -1,10 +1,12 @@
 import React from 'react'
 import { useEffect } from 'react';
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import Cart from '../Components/Cart'
 import axios from "axios";
+import {CartContext} from '././CartContext';
 
 const Shop = () => {
+    const {name} = useContext(CartContext);
     const [product, setProduct] = useState([]);
     useEffect(() =>{
             const getAllData = async() => {
@@ -16,7 +18,7 @@ const Shop = () => {
 
   return (
     <div className="container">
-        <h1>Product</h1>
+        <h1>Product {name}</h1>
         <div className='container pt-5'>
         <div className='products'>
         {

@@ -13,8 +13,9 @@ const SingleProduct = () => {
         .then(product => {
             setProduct(product);
         })
-    },[params])
+    },[params]);
 
+    
   return (
     product ? ( 
       <>
@@ -26,7 +27,7 @@ const SingleProduct = () => {
             <p>Small</p>
             <div className='price'>
                 <p>${product.price}</p>
-                <button>Cart</button>
+                <button >Cart</button>
             </div>
     </div>
       </>
