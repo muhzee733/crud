@@ -14,6 +14,8 @@ import SingleProduct from './Pages/SingleProduct';
 import Cart from './Pages/Cart';
 import Navbar from './Navbar';
 import { CartContext } from './Pages/CartContext';
+import State from './State';
+import Api from './Api';
 
 
 const App = () => {
@@ -31,7 +33,6 @@ const App = () => {
   
   return (
     <div>
-      <Navbar />
       <CartContext.Provider value={{Cart, setCart}}>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -46,6 +47,8 @@ const App = () => {
           <Route path="/edit/:id" element={<Edit />} />
           <Route path="/life" element={<LifeCycle />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/state" element={<State />} />
+          <Route path="/api" element={<Api />} />
         </Routes>
         </CartContext.Provider>
     </div>
